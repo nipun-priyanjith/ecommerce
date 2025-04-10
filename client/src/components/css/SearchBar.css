@@ -1,0 +1,67 @@
+/* Search Bar Styles */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  justify-content: center; /* Center the search bar container */
+  width: 65%; /* Set the width to 65% */
+  padding: 10px 0;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Make the input take up the full width of its container */
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-bar-container {
+    width: 90%; /* Make search bar wider on smaller screens */
+  }
+
+  .search-input {
+    font-size: 16px;
+  }
+
+  .search-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar-container {
+    width: 90%; /* Ensure it's still responsive on very small screens */
+  }
+
+  .search-input {
+    font-size: 16px;
+  }
+
+  .search-button {
+    font-size: 16px;
+  }
+}

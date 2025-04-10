@@ -1,0 +1,60 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Main dashboard layout */
+.settings-dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 25%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.sidebar ul li:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.sidebar ul li.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Content area styles */
+.content {
+  width: 75%;
+  padding: 20px;
+}
+
+.content h2 {
+  color: #333;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}

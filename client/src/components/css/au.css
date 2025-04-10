@@ -1,0 +1,96 @@
+
+
+/* General Page Styling */
+.admin-users-page {
+  padding: 20px;
+  background-color: #effbf9;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 50px;
+}
+
+/* User List Grid Styling */
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* General User Card Styling */
+.user-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* User Header Section (Email and Image) */
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-email {
+  font-size: 1rem;
+  color: #333;
+}
+
+.user-email-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* User Profile Image */
+.user-profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* User Details Styling */
+.user-name {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.user-detail {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.user-detail strong {
+  color: #333;
+}

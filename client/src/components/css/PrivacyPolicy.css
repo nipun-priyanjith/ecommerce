@@ -1,0 +1,85 @@
+/* General Styling for Privacy Policy Page */
+.privacy-policy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #88baf0;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item.active {
+  background-color: #d5e8fc;
+  color: #fff;
+  border-color: #d5e8fc;
+}
+
+.faq-item:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .privacy-policy-container {
+    padding: 20px;
+  }
+
+  .privacy-policy-heading {
+    font-size: 2rem;
+  }
+
+  .faq-question {
+    font-size: 1.1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.95rem;
+  }
+}

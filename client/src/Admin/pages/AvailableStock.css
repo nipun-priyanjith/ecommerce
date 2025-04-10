@@ -1,0 +1,64 @@
+/* Container */
+.available-stock-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.available-stock-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+/* Table Styles */
+.available-stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.available-stock-table th,
+.available-stock-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.available-stock-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Alternating row colors */
+.available-stock-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+.available-stock-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+  .available-stock-table {
+    font-size: 14px;
+  }
+
+  .available-stock-table th,
+  .available-stock-table td {
+    padding: 8px;
+  }
+}
+/* Add this to your AvailableStock.css */
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /* Ensures the image aspect ratio is maintained */
+  border-radius: 4px;
+}

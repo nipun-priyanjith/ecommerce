@@ -1,0 +1,136 @@
+.user-report {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6f9;
+}
+
+.user-report-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #8adcff;
+  margin-bottom: 30px;
+}
+
+/* Summary Section */
+.report-summary {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.summary-card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: scale(1.05);
+}
+
+.summary-icon {
+  font-size: 2rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.summary-card h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* Charts Section */
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.chart {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33% - 20px);
+  max-width: calc(33% - 20px);
+  margin-bottom: 20px;
+}
+
+.chart h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.user-report {
+  background: linear-gradient(to bottom, #f4f6f9, #ecf0f1); /* Enhance the background */
+}
+
+
+
+/* Toggle Buttons Section */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.toggle-button {
+  background-color: #ffffff;
+  color: #34495e;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button:hover {
+  background-color: #ecf0f1;
+  color: #2980b9;
+  transform: scale(1.1);
+}
+
+.toggle-button.active {
+  background-color: #3498db;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.5);
+}
+
+.toggle-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.3);
+}
+
+/* Optional for responsive behavior */
+@media (max-width: 768px) {
+  .toggle-button {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .toggle-buttons {
+    gap: 10px;
+  }
+}

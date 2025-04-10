@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app
+    depends_on:
+      - server
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+
+  server:
+    build: ./server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/app
+      - ./server/node_modules:/app/node_modules
+    environment:
+      - MONGO_URI=
+      - JWT_SECRET=
+      - AWS_ACCESS_KEY_ID=
+      - AWS_SECRET_ACCESS_KEY=
+      - AWS_REGION=
+      - S3_BUCKET=
+
+  ml:
+    build: ./ml
+    ports:
+      - "5001:5001"
+    depends_on:
+      - server
+
+  chat:
+    build: ./c
+    ports:
+      - "5002:5002"
+    depends_on:
+      - server

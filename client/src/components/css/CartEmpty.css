@@ -1,0 +1,26 @@
+.cart-empty-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.empty-cart-message {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.empty-cart-image {
+  width: 250px; /* Adjust the size as needed */
+  margin-bottom: 20px;
+  opacity: 0.7; /* Optional: gives a soft look */
+}
+
+h2 {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+  color: #666;
+}

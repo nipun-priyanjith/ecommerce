@@ -1,0 +1,267 @@
+
+body {
+  background-color: #f9fbfc;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.my-orders-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.my-orders-container h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #a5b1f4;
+  text-align: center;
+  font-weight: 700;
+}
+
+.order-card {
+  margin-bottom: 25px;
+  padding: 25px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #f1f3f5);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15), -8px -8px 16px rgba(255, 255, 255, 0.9);
+}
+
+.order-card h3 {
+  font-size: 24px;
+  color: #3949ab;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.order-card p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.cart-item-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #e3f2fd;
+  transition: transform 0.3s ease;
+}
+
+.cart-item img:hover {
+  transform: scale(1.1);
+}
+
+.cart-item div {
+  font-size: 18px;
+  color: #444;
+}
+
+.cart-item div span {
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.order-status {
+  color: #1b5e20;
+  font-weight: 600;
+}
+
+.rate-btn {
+  background-color: #3949ab;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rate-btn:hover {
+  background-color: #283593;
+  transform: scale(1.05);
+}
+
+.rating-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.rating-modal {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: scaleUp 0.3s ease;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.stars {
+  font-size: 2.8em;
+  color: #a8a6a6;
+  margin: 20px 0;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.star.filled {
+  color: #ffcc00;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.rating-message {
+  width: 100%;
+  height: 80px;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #555;
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.rating-message:focus {
+  border-color: #3949ab;
+}
+
+.submit-btn,
+.close-btn {
+  background-color: #3949ab;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  margin: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover,
+.close-btn:hover {
+  background-color: #283593;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .order-card h3 {
+    font-size: 22px;
+  }
+
+  .cart-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-item div {
+    font-size: 15px;
+  }
+
+  .rating-modal {
+    width: 95%;
+  }
+}
+
+
+
+
+
+.order-status-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  position: relative;
+}
+
+.status-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  color: #cfd8dc; /* Default color (blurred) */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.status-icon p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #cfd8dc;
+}
+
+.status-icon.active {
+  color: #3949ab; /* Highlighted color */
+  transform: scale(1.2);
+}
+
+.status-icon.active p {
+  color: #3949ab;
+}
+
+/* Horizontal line between icons */
+.status-line {
+  flex: 1;
+  height: 2px;
+  background-color: #cfd8dc;
+  margin: 0 10px;
+}
+
+.status-icon.active ~ .status-line {
+  background-color: #3949ab; /* Highlighted color for active status */
+}

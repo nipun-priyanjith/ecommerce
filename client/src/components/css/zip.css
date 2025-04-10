@@ -1,0 +1,90 @@
+.shipping-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.shipping-container h1,
+.shipping-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.shipping-container ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.shipping-container ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.shipping-container ul li img {
+  display: block;
+  margin-top: 10px;
+  max-width: 100px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.shipping-container ul li p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.shipping-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.shipping-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.shipping-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.shipping-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.shipping-form button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .shipping-container {
+    padding: 10px;
+  }
+
+  .shipping-form input[type="text"] {
+    font-size: 14px;
+  }
+
+  .shipping-form button {
+    width: 100%;
+    font-size: 14px;
+  }
+}

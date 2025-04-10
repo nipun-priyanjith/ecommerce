@@ -1,0 +1,71 @@
+.manage-stock-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.manage-stock-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.manage-stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.manage-stock-table th,
+.manage-stock-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.manage-stock-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Alternating row colors */
+.manage-stock-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+.manage-stock-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Image Styling */
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Input and Button Styling */
+.apply-button {
+  padding: 6px 12px;
+  background-color: #00ffd9;
+  color: rgb(0, 49, 209);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.apply-button:hover {
+  background-color: #2e6fe8;
+  color: #00ffd9;
+}
+
+input[type="number"] {
+  padding: 6px 10px;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

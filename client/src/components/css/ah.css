@@ -1,0 +1,98 @@
+/* General Styling */
+.ahome-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f4f7fc;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #8dc5f9;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-button.active {
+  background-color: #559ce7;
+  transform: scale(1.1);
+}
+
+.toggle-button:hover {
+  background-color: #70b4f7;
+}
+
+/* Chart Titles */
+.chart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #559ce7;
+  text-align: center;
+}
+
+/* Sales Chart */
+.sales-chart-container,
+.category-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+
+}
+
+.sales-chart {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-chart {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Loading Message */
+.sales-chart-container p {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .toggle-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .chart-title {
+    font-size: 20px;
+  }
+
+  .sales-chart-container,
+  .category-chart-container {
+    padding: 15px;
+  }
+}

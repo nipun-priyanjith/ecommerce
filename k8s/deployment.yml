@@ -1,0 +1,102 @@
+# client deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+      - name: client
+        image: name/client:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: REACT_APP_API_URL
+          value: "http://server-service:5000"
+
+---
+# server deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: server
+  template:
+    metadata:
+      labels:
+        app: server
+    spec:
+      containers:
+      - name: server
+        image: name/server:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: MONGO_URI
+          value: ""
+        - name: JWT_SECRET
+          value: "your_jwt_secret"
+        - name: AWS_ACCESS_KEY_ID
+          value: "your_aws_key"
+        - name: AWS_SECRET_ACCESS_KEY
+          value: "your_aws_secret"
+        - name: AWS_REGION
+          value: ""
+        - name: S3_BUCKET
+          value: ""
+
+---
+# ml deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ml
+  template:
+    metadata:
+      labels:
+        app: ml
+    spec:
+      containers:
+      - name: ml
+        image: name/ml:latest
+        ports:
+        - containerPort: 5001
+
+---
+# cpy (chat) deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cpy-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cpy
+  template:
+    metadata:
+      labels:
+        app: cpy
+    spec:
+      containers:
+      - name: cpy
+        image: name/cpy:latest
+        ports:
+        - containerPort: 5002

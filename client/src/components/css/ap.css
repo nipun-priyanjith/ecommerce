@@ -1,0 +1,96 @@
+
+.admin-product-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #9affee;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #d0fff7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-item {
+  padding: 15px;
+  font-size: 1rem;
+  color: #0056b3;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #007bff;
+  transform: scale(1.05);
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar-item.active {
+  background-color: #0056b3;
+  font-weight: bold;
+  color: white;
+}
+
+.content-area {
+  flex: 1;
+  padding: 30px;
+  background-color: #effbf9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.content-area h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.content-area p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+
+
+.reports-toggle {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  gap: 10px; /* Space between the text and icon */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.reports-dropdown {
+  padding: 10px 0; /* Padding to add space around the dropdown items */
+  background-color: #baf8fe;
+  border-radius: 5px;
+  text-align: center; /* Center-align dropdown text */
+}
+
+.dropdown-item {
+  padding: 10px;
+  color: #0056b3;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center-align dropdown items */
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+}
