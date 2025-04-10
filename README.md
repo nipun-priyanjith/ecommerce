@@ -80,6 +80,8 @@ An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, fea
 
 <img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/g.png">
 ---
+
+
 ## ⚙️ Getting Started
 
  **Clone the repo**
