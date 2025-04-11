@@ -1,14 +1,14 @@
 
 # 🛒 SmartShop – AI-Powered E-Commerce Platform
 ---
-<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/yuyutyutyutu.png">
+<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/Picture4.jpg">
 
 ---
 An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, featuring **personalized product recommendations**, **admin analytics**, and a **chatbot powered by Google Gemini API**. The project is deployed on a local **Kubernetes lab environment** with a full **CI/CD pipeline** using Jenkins and Docker.
 
 ---
+<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/yuyutyutyutu.png">
 
-<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/Picture4.jpg">
 ---
 
 ## 🚀 Features
@@ -90,6 +90,13 @@ An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, fea
 
    ```
 
+---
+<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/a6.png">
+
+---
+
+
+
 ##  Add your environment variables
    ```bash
 MONGO_URI=your_mongodb_connection
@@ -98,5 +105,17 @@ AWS_ACCESS_KEY=your_aws_key
 AWS_SECRET_KEY=your_aws_secret
 GEMINI_API_KEY=your_google_gemini_key
   ```
+
+---
+
+
+---
+<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/Picture9.jpg">
+
+---
+
+
+---
+<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/Screenshot%202025-04-05%20183644.png">
 
 ---
