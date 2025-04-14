@@ -1,9 +1,9 @@
-
-# 🛒 SmartShop – AI-Powered E-Commerce Platform
----
 <img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/Picture4.jpg">
 
----
+
+
+# 🛒 SmartShop – AI-Powered E-Commerce Platform
+
 An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, featuring **personalized product recommendations**, **admin analytics**, and a **chatbot powered by Google Gemini API**. The project is deployed on a local **Kubernetes lab environment** with a full **CI/CD pipeline** using Jenkins and Docker.
 
 ---
