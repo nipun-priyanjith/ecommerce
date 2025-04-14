@@ -7,7 +7,7 @@
 An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, featuring **personalized product recommendations**, **admin analytics**, and a **chatbot powered by Google Gemini API**. The project is deployed on a local **Kubernetes lab environment** with a full **CI/CD pipeline** using Jenkins and Docker.
 
 ---
-<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/yuyutyutyutu.png">
+<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/Screenshot%202025-04-09%20194227.png">
 
 ---
 
@@ -31,8 +31,9 @@ An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, fea
 - Connected to the database for real-time responses
 
 ---
+<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/g.png">
 
-<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/Screenshot%202025-04-09%20194227.png">
+---
 
 ## ⚙️ Tech Stack
 
@@ -76,10 +77,7 @@ An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, fea
 | **Nuwantha Wickramasingha** | Backend Development,                      |
 | **Nipun Priyanjith**  | System Design, ML, AWS, CI/CD, MongoDB Atlas, ML (SVD), Kubernetes |
 
----
 
-<img src="https://github.com/nipun-priyanjith/ecommerce/blob/main/images/g.png">
----
 
 
 ## ⚙️ Getting Started
