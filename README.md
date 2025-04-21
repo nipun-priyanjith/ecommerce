@@ -68,14 +68,6 @@ An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, fea
 
 ---
 
----
-## 👥 Contributors
-
-| Name                 | Contribution                                     |
-|----------------------|--------------------------------------------------|
-| **Lakshan Umayannga** | UI/UX, Frontend,                                |
-| **Nuwantha Wickramasingha** | Backend Development,                      |
-| **Nipun Priyanjith**  | System Design, ML, AWS, CI/CD, MongoDB Atlas, ML (SVD), Kubernetes |
 
 
 
