@@ -46,7 +46,7 @@ An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, fea
 | Storage      | AWS S3                                           |
 | Chatbot      | Google Gemini API                                |
 | DevOps       | Docker, Jenkins, SonarQube, Kubernetes (K8s)     |
-| Monitoring   | Prometheus & Grafana (via Helm)                  |
+| Monitoring   | Grafana (via Helm)                               |
 
 ---
 
@@ -60,7 +60,7 @@ An end-to-end, ML-powered e-commerce platform built with the **MERN stack**, fea
 - **Jenkins** automates testing and container builds
 - **SonarQube** for code quality analysis
 - **Kubernetes** for local deployment (via `k8s/` folder)
-- **Monitoring with Grafana & Prometheus**
+- **Monitoring with Grafana**
 
 ---
 
